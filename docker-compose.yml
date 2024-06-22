@@ -1,0 +1,11 @@
+version: '3.8'
+services:
+  db:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_USER: moviefilm
+      POSTGRES_PASSWORD: moviefilm123
+      POSTGRES_DB: moviefilm
+    ports:
+      - 5499:5432
